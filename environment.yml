@@ -1,0 +1,26 @@
+name: ucan
+channels:
+  - pytorch
+  - conda-forge
+  - defaults
+
+dependencies:
+  - python=3.8
+  - pytorch>=1.9.0
+  - torchvision>=0.10.0
+  - cudatoolkit=11.3  # Adjust based on your CUDA version
+  - numpy=1.21.*
+  - scipy=1.7.*
+  - scikit-learn=1.0.*
+  - matplotlib=3.4.*
+  - tqdm=4.62.*
+  - statsmodels=0.12.*
+  - jupyter
+  - notebook
+  
+  - pip:
+    # Add any pip-only packages here if needed
+    
+# To create this environment:
+# conda env create -f environment.yml
+# conda activate ucan
